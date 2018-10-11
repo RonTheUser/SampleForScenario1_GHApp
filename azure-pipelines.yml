@@ -4,7 +4,6 @@ pool:
 variables:
   - name: foo
     value: bar
-  - group: test
 
 steps:
-  - script: echo $(foo) $(userName)  
+  - script: echo $(foo) (userName)  
