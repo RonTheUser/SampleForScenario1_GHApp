@@ -7,10 +7,9 @@ pool:
   vmImage: 'VS2017-Win2016'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-  foo: bar
+  - name: foo
+    value: bar
+  - group: test
 
 steps:
-  - script: echo @foo 
+  - script: echo $(foo) $(userName)  
