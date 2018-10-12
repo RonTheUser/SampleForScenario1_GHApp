@@ -1,4 +1,4 @@
-pool: RonsAgentPool
+pool: SecurePool
 
 variables:
   - name: foo
