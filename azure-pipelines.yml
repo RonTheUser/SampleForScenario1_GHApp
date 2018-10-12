@@ -6,4 +6,4 @@ variables:
     value: bar
 
 steps:
-  - script: echo $(foo) (userName)  
+  - script: echo $(foo) $(build.QueuedBy) $(build.reason)  
