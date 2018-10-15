@@ -3,6 +3,7 @@ pool: SecurePool
 variables:
   - name: foo
     value: bar
+  - group: TestSecrets
 
 steps:
-  - script: echo $(foo) $(build.QueuedBy) $(build.reason)  
+  - script: echo $(foo) $(build.QueuedBy) $(build.reason) $(UserName)
